@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 // import 'screen_2.dart';
-import 'screen_3.dart';
+// import 'screen_3.dart';
 
 
 class EmailModel {
@@ -122,17 +122,17 @@ class _Screen1State extends State<Screen1> {
           );
         },
       ),
-      floatingActionButton: FloatingActionButton(
-        backgroundColor: const Color(0xFF8B5E3C),
-        child: const Icon(Icons.edit, color: Colors.white),
-        onPressed: () {
-          // Переход на Экран 3
-          Navigator.push(
-            context,
-            MaterialPageRoute(builder: (context) => const Screen3()),
-          );
-        },
-      ),
+      // floatingActionButton: FloatingActionButton(
+      //   backgroundColor: const Color(0xFF8B5E3C),
+      //   child: const Icon(Icons.edit, color: Colors.white),
+      //   onPressed: () {
+      //     // Переход на Экран 3
+      //     Navigator.push(
+      //       context,
+      //       MaterialPageRoute(builder: (context) => const Screen3()),
+      //     );
+      //   },
+      // ),
     );
   }
 }
