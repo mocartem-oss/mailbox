@@ -50,14 +50,14 @@ class _Screen1State extends State<Screen1> {
     }).toList();
 
     return Scaffold(
-      backgroundColor: const Color(0xFF1E1E1E),
+      backgroundColor: const Color.fromARGB(255, 255, 252, 252),
       appBar: AppBar(
-        backgroundColor: const Color(0xFF1E1E1E),
+        backgroundColor: const Color.fromARGB(255, 255, 252, 252),
         elevation: 0,
         title: Container(
           height: 45,
           decoration: BoxDecoration(
-            color: const Color(0xFF2D2D2D),
+            color: const Color.fromARGB(255, 255, 252, 252),
             borderRadius: BorderRadius.circular(10),
           ),
           child: TextField(
@@ -66,7 +66,7 @@ class _Screen1State extends State<Screen1> {
                 searchQuery = val;
               });
             },
-            style: const TextStyle(color: Colors.white),
+            style: const TextStyle(color: Colors.black),
             decoration: const InputDecoration(
               hintText: 'Поиск в почте',
               hintStyle: TextStyle(color: Colors.grey),
@@ -99,7 +99,7 @@ class _Screen1State extends State<Screen1> {
                   email.sender,
                   style: TextStyle(
                     fontWeight: email.isRead ? FontWeight.normal : FontWeight.bold,
-                    color: Colors.white,
+                    color: Colors.black,
                   ),
                 ),
                 const Spacer(),
@@ -123,10 +123,10 @@ class _Screen1State extends State<Screen1> {
         },
       ),
       floatingActionButton: FloatingActionButton(
-        backgroundColor: const Color(0xFF8B5E3C),
+        backgroundColor: const Color.fromARGB(255, 243, 228, 18),
         child: const Icon(Icons.edit, color: Colors.white),
         onPressed: () {
-          // Переход на Экран 3
+          //переход на Экран 3
           Navigator.push(
             context,
             MaterialPageRoute(builder: (context) => const Screen3()),
