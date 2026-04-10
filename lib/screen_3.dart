@@ -17,7 +17,7 @@ class Screen3 extends StatelessWidget {
         actions: [
           TextButton(
             onPressed: () {
-              // Тут логика отправки
+              //отправка письма
               Navigator.pop(context);
             },
             child: const Text('Отправить', style: TextStyle(color: Colors.blue, fontSize: 16)),
@@ -28,7 +28,7 @@ class Screen3 extends StatelessWidget {
         padding: const EdgeInsets.all(16.0),
         child: Column(
           children: [
-            // Кому
+            //кому
             TextField(
               style: const TextStyle(color: Colors.white),
               decoration: InputDecoration(
@@ -38,7 +38,7 @@ class Screen3 extends StatelessWidget {
               ),
             ),
             const Divider(color: Colors.grey),
-            // Тема
+            //тема
             TextField(
               style: const TextStyle(color: Colors.white),
               decoration: InputDecoration(
@@ -49,11 +49,11 @@ class Screen3 extends StatelessWidget {
             ),
             const Divider(color: Colors.grey),
             const SizedBox(height: 10),
-            // Текст
+            //текст
             Expanded(
               child: TextField(
                 style: const TextStyle(color: Colors.white),
-                maxLines: null, // Бесконечная высота
+                maxLines: null,
                 decoration: InputDecoration(
                   hintText: 'Сообщение',
                   hintStyle: const TextStyle(color: Colors.grey),
