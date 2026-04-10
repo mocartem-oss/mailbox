@@ -123,7 +123,7 @@ class _Screen1State extends State<Screen1> {
         },
       ),
       floatingActionButton: FloatingActionButton(
-        backgroundColor: const Color.fromARGB(255, 243, 228, 18),
+        backgroundColor: const Color.fromARGB(255, 132, 132, 128),
         child: const Icon(Icons.edit, color: Colors.white),
         onPressed: () {
           //переход на Экран 3
